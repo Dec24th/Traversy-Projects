@@ -5,7 +5,7 @@
  }
 
  body {
-     background-image: url(https://images.unsplash.com/photo-1533502502-d394e5122f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-image: url(https://images.unsplash.com/photo-1533502502-d394e5122f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -20,7 +20,9 @@
     margin: 0;
     overflow: hidden; /*to get rid of anyscroll bars*/
     } 
-    /* add a dark overlay*/
+
+
+    /* Below adds a dark overlay*/
     body::after {
         content: '';
         position: absolute;
@@ -30,9 +32,9 @@
         height: 100%;
         background-color: rgba(0,0,0, 0.55);
     }
-
+    /*brings text forward - use with body::after*/
     body * {
-        z-index: 1 /*brings it forward*/
+        z-index: 1 
     }
 
     h1{
